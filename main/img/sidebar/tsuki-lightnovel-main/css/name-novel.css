@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	width:100%;
+	margin:0 auto;
+}
+.container{
+	width:1300px;
+	margin:0;
+}
+header{
+	display:block;
+	background:none;
+	width:auto;
+	height:150px;
+}
+.left-logo{
+	display:inline-block;
+	float:left;
+}
+.right-logo{
+	float:right;
+}
+.search{
+	float:left;
+	display:block;
+	background:none;
+	padding-left:20px;
+	border-radius:5px;
+}
+.search ul{
+	padding-top:50px;
+	padding:50px;
+}
+.search ul input[type=text]{
+	border:none;
+	font-size:15px;
+	width:350px;
+	height:30px;
+	padding:0 45px 0 20px;
+	border-radius:50px;
+	border:1px solid #A81A1C;
+}
+.search ul button{
+	clear:both;
+	border:none;
+	background:none;
+	width:32px;
+	height:32px;
+}
+.search ul input[type=submit]{
+	border:none;
+	font-size:15px;
+	padding:5px;
+	width:32px;
+	height:32px;
+	background:url("../Image/search-icon.png") no-repeat;
+	position:relative;
+	cursor:pointer;
+}
+.login-motal{
+	float:left;
+	width:200px;
+	height:70px;
+	display:block;
+	padding:20px;
+}
+.login-motal ul{
+	padding:15px 10px;
+	width:180px;
+	font-family:'Ek Mukta';
+	border-radius:6px;
+}
+.login-motal ul button{
+	width:70px;
+	height:60px;
+	padding-right:10px;
+	border:none;
+	border-radius:5px;
+	padding-left:10px;
+	cursor:pointer;
+}
+.login-motal ul button a{
+	color:white;
+	text-decoration:none;
+}
+.login{
+	background:#00bfff;
+}
+.register{
+	background:#ffbf00;
+}
+/*----Menu----*/
+.start:after{
+	display:block;
+	clear:both;
+}
+.menu{
+	display:block;
+	width:auto;
+	background:#e68a00;
+	height:50px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.menu li {
+	list-style:none;
+	font-family:'Ek Mukta';
+}
+.menu a{
+	transition:all linear 0.15s;
+	color:#ffccff;
+	text-decoration:none;
+}
+.menu .nova{
+	font-size:12px;
+	line-height:0;
+}
+.content{
+	float:left;
+	display:inline-block;
+	position:relative;
+	font-size:19px;
+}
+.content a{
+	padding:10px 35px;
+	display:inline-block;
+	color:white;
+}
+.menu ul li:hover a{
+	background:none;
+}
+.menu li:hover .sub-menu{
+	z-index:1;
+	opacity:1;
+}
+.sub-menu{
+	width:900px;
+	padding:6px 0;
+	background:white;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:-1;
+	opacity:0;
+	box-shadow:0 2px 3px rgba(0,0,0,0.2);
+}
+.sub-menu li{
+	display:inline-block;
+	font-size:17px;
+	margin:0;
+	list-style:none;
+}
+.sub-menu li a{
+	display:block;
+	transition:all linear 0.15s;
+	width:200px;
+	font-weight:500px;
+	color:#000000;
+}
+.sub-menu li a:hover{
+	text-decoration:none;
+	color:red;
+}
+/*trang-truyen--*/
+.main-Name{
+	display:block;
+	width:auto;
+	height:780px;
+	padding-bottom:40px;
+	font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+	background:#ebebeb;
+}
+.main-Name .main-Novel{
+	display:inline-block;
+	font-size:25px;
+	font-weight:bold;
+	color:#56ccf2;
+	height:0 auto;
+	padding:10px;
+	padding-top:20px;
+	text-align:left;
+}
+.main-Novel img{
+	display:block;
+	height:360px;
+	width:250px;
+	border-radius:5px;
+}
+.main-Name .name-Novel{
+	float:right;
+	border:none;
+	height:360px;
+	width:1000px;
+	margin-top:20px;
+}
+.name-Novel .name-file{
+	clear:both;
+	display:inline-block;
+	width:auto;
+	height:70px;
+	padding-bottom:20px;
+}
+.name-file span{
+	font-size:30px;
+}
+.name-Novel .list-series{
+	display:inline-block;
+	clear:both;
+	width:auto;
+	height:30px;
+	display:flex;
+	margin-bottom:20px;
+}
+.list-series a{
+	width:100px;
+	height:30px;
+	border:1px solid;
+	border-radius:20px;
+	margin-left:15px;
+	margin-right:15px;
+	padding-top:2px;
+	text-align:center;
+	text-decoration:none;
+	background:#806600;
+	color:white;
+	opacity:2;
+}
+.name-Novel .name-author{
+	display:block;
+	border:none;
+	width:auto;
+	height:120px;
+}
+.name-author .list-author{
+	border:none;
+	padding-top:10px;
+	padding-bottom:3px;
+	color:#001433;
+}
+.list-author span,.list-author a{
+	font-size:16px;
+	font-weight:600;
+	text-decoration:none;
+	color:black;
+}
+.list-author a{
+	font-weight:300;
+}
+.list-evaluate{
+	display:block;
+	border:none;
+	margin-top:90px;
+	margin-left:120px;
+}
+.list-evaluate a{
+	padding-left:70px;
+	padding-right:40px;
+}
+.list-evaluate a i{
+	font-size:30px;
+	font-weight:400;
+}
+.list-heart{
+	color:#e22590;
+}
+.list-star{
+	color:#f5ab00;
+}
+.list-cmt,.list-share{
+	color:#00cccc;
+}
+/*----List-summary--*/
+.list-read{
+	display:block;
+	width:auto;
+	height:220px;
+	border:none;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:#ffcccc;
+	border-radius:5px;
+}
+.ano-full{
+	display:block;
+	width:auto;
+	height:130px;
+	border:none;
+	margin-bottom:10px;
+	background:#ffcccc;
+	border-radius:5px;
+}
+.list-read .list-summary{
+	height:40px;
+	font-size:16px;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+.list-summary h4{
+	padding-top:4px;
+}
+.read-summary{
+	display:block;
+	width:auto;
+	height:0 auto;
+	padding-top:5px;
+}
+.read-summary p{
+	font-size:16px;
+	margin-bottom:5px;
+}
+.full-name{
+	padding-top:15px;
+	padding-left:10px;
+}
+/*----chap-manga---*/
+.LN-image{
+	display:block;
+	width:auto;
+	height:350px;
+	margin-top:50px;
+	background:#ffcccc;
+	border-radius:5px;
+	margin-bottom:5px;
+}
+.header-LN{
+	height:30px;
+	padding:0;
+	margin:0;
+}
+.header-LN h4{
+	padding-left:10px;
+	padding-top:6px;
+}
+.image-novel{
+	float:left;
+	display:inline-block;
+	margin-left:10px;
+	padding-right:20px;
+	width:210px;
+}
+.image-novel img{
+	border-radius:5px;
+	width:180px;
+	height:270px;
+}
+.LN-image li{
+	float:left;
+	width:1000px;
+	height:40px;
+	list-style:none;
+}
+.chap-name{
+	float:left;
+	width:500px;
+	height:40px;
+	padding-top:10px;
+}
+.LN-image a,.chap-time{
+	font-size:17px;
+	text-decoration:none;
+	color:black;
+	font-weight:500;
+}
+.chap-time{
+	display:block;
+	float:right;
+	width:100px;
+	height:40px;
+	padding-top:7px;
+}
+footer{
+	width:auto;
+	margin:auto;
+}
+footer div{
+	display:block;
+	background:#1affd1;
+	height:auto;
+	text-align:center;
+}
+footer div a{
+	display:inline-flex;
+	text-decoration:none;
+	list-style:none;
+	font-size:18px;
+	color:#000033;
+}
+footer div a li{
+	background:none;
+	padding:10px;
+	margin:5px;
+}
+footer div#foot{
+	display:block;
+}
+footer div ul{
+	display:inline-block;
+	width:1500px;
+}
+.foot2{
+	clear:both;
+	text-align:center;
+	width:auto;
+	margin:none;
+	padding:0;
+}
+.foot2 div{
+	width:auto;
+	display:inline-block;
+	padding:0;
+	margin:0;
+}
+.foot2 img{
+	display:inline-block;
+	width:70px;
+	height:70px;
+	border-radius:50px;
+}
+.foot2 span{
+	text-align:center;
+	font-size:20px;
+}
+
+

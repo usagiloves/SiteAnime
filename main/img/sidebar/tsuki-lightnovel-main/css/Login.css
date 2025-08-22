@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.table-login{
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:none;
+  text-align: center;
+}
+.table-login h1{
+  color:#ccffff;
+  text-transform:unset;
+  font-weight:900;
+}
+.table-login input[type = "text"],.table-login input[type = "password"]{
+  border:0;
+  display:block;
+  margin:20px auto;
+  text-align:center;
+  border:5px solid #3498db;
+  padding:14px 10px;
+  width:400px;
+  outline:none;
+  color:#000d1a;
+  border-radius:100px;
+  font-size:19px;
+}
+.table-login input[type = "text"]:focus,.table-login input[type = "password"]:focus{
+  width:400px;
+  border-color:#2ecc71;
+}
+.table-login input[type = "submit"]{
+  border:0;
+  background:none;
+  display:block;
+  margin:20px auto;
+  text-align:center;
+  border:5px solid #2ecc71;
+  padding:14px 40px;
+  outline: none;
+  color:#ccffff;
+  border-radius:100px;
+  cursor: pointer;
+  font-size:19px;
+}
+.table-login input[type = "submit"]:hover{
+  background: #2ecc71;
+}

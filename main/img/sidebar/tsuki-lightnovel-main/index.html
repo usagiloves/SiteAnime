@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TSuki LightNovel</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+	<div class="container">
+	<header>
+		<div class="left-logo"><a href="Website Tsuki-LightNovel.html">
+			<img src="Image/Logo.png" height="150" width="400"></a>
+		</div>
+		<div class="right-logo">
+			<img src="Image/Logo2.png" height="150" width="150">
+		</div>
+		<div class="search">
+			<ul>
+				<input type="text" name="tsearch" placeholder="Hãy nhập truyện cần tìm . . .">
+				<button><input type="submit" value=" "></button>
+			</ul>
+		</div>
+		<div class="login-motal">
+			<ul>
+				<button class="login"><a href="Tsuki LightNovel Login.html">Đăng Nhập</a></button>
+
+				<button class="register"><a href="">Đăng Ký</a></button>
+			</ul>
+		</div>
+	</header>
+	<!--/.mmenu-->
+	<nav class="menu">
+		<ul class="start">
+			<li class="content"><a href="Website Tsuki-LightNovel.html">Trang Chủ</a></li>
+		</ul>
+		<ul>
+			<li>
+				<div class="content">
+					<a href="#">Thể Loại<span class="nova">&#9660;</span></a>
+				
+					<ul class="sub-menu">
+						<li><a href="Tsuki-LightNovel List-Di-Gioi.html">Dị Giới</a></li>
+						<li><a href="#">Quân Sự</a></li>
+						<li><a href="#">Xuyên Không</a></li>
+						<li><a href="#">Hài Hước</a></li>
+						<li><a href="#">Cổ Đại</a></li>
+						<li><a href="#">Truyện Teen</a></li>
+						<li><a href="#">Nữ Phụ</a></li>
+						<li><a href="#">Văn Học Việt</a></li>
+						<li><a href="#">Kiếm Hiệp</a></li>
+						<li><a href="#">Đô Thị</a></li>
+						<li><a href="#">Võng Du</a></li>
+						<li><a href="#">Huyền Huyễn</a></li>
+						<li><a href="#">Dị Nắng</a></li>
+						<li><a href="#">Lịch Sử</a></li>
+						<li><a href="#">Trọng Sinh</a></li>
+						<li><a href="#">Thám Hiểm</a></li>
+						<li><a href="Tsuki-LightNovel List-Novel.html">Light Novel</a></li>
+						<li><a href="#">Khác...</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<a href="#">Sắp Xếp<span class="nova">&#9660;</span></a>
+
+					<ul class="sub-menu">
+						<li><a href="#">Top Ngày</a></li>
+						<li><a href="#">Top Tuần</a></li>
+						<li><a href="#">Top Tháng</a></li>
+						<li><a href="#">Yêu Thích</a></li>
+						<li><a href="#">Mới Cập Nhật</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="content"><a href="#">Truyện Hot</a></li>
+			<li class="content"><a href="#">Truyện Full</a></li>
+			<li class="content"><a href="#">Theo Dõi</a></li>
+			<li class="content"><a href="#">Thảo Luận</a></li>
+			<li class="content"><a href="#">Fanpage</a></li>
+		</ul>
+	</nav>
+	<!--Slide-->
+	<section class="main-slide">
+		<div class="container">
+			<div class="title-slide">
+				<div class="title-image">
+					<a href=""><img id="slide-image"src="Image/Slider/1.jpg"></a>
+					<span id="btn-prev"><i class="fas fa-chevron-left" onClick="back()"></i></span>
+					<span id="btn-next"><i class="fas fa-chevron-right" onClick="next()"></i></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		var t;
+		var currentIndex=1;
+		function next(){
+			clearInterval(t);
+			if(currentIndex < 5){
+				currentIndex++;
+				document.getElementById("slide-image").src = "Image/Slider/" + currentIndex + ".jpg";
+			}
+			else{
+				currentIndex=1;
+				document.getElementById("slide-image").src = "Image/Slider/" + currentIndex + ".jpg";
+			}
+			t = setInterval("next()",3000);
+		}
+		function back(){
+			clearInterval(t);
+			if(currentIndex > 1){
+				currentIndex--;
+				document.getElementById("slide-image").src = "Image/Slider/" + currentIndex + ".jpg";
+			}
+			else{
+				currentIndex=5;
+				document.getElementById("slide-image").src = "Image/Slider/" + currentIndex + ".jpg";
+			}
+			t = setInterval("next()",3000);
+		}
+		t = setInterval("next()",3000);
+	</script>
+	<!--File Truyen-->
+	<section class="main-content">
+		<div class="container">
+		<div>
+			<div id="anh">
+				<a href=""><span class="images"></span>Truyện Mới Cập Nhật</a>
+			</div>
+       		<ul class="LightNovel">
+        		<li class="star2">
+        			<a href="Tsuki-LightNovel Slime-300.html">
+        				<img src="Image/slime-taoshite-300-nen-shiranai-uchi-ni.jpg">
+        				<h3>Slime Taoshite 300 Nen, Shiranai Uchi ni Level MAX ni Nattemashita</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="Tsuki-LightNovel Sword-art-online.html">
+        				<img src="https://fr.web.img6.acsta.net/pictures/19/07/09/11/04/5921608.jpg">
+        				<h3>Sword Art Online</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/overlord2.jpg">
+        				<h3>Overlord</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/even-though-im-a-former-noble-and-a-sing-97.jpg">
+        				<h3>Even Though I’m a Former Noble and a Single Mother, My Daughters Are Too Cute and Working as an Adventurer Isn’t Too Much of a Hassle</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/slime-tensei-taikensha-ga-youjo-elf-ni-d-7877.jpg">
+        				<h3>Slime Tensei. Taikensha ga Youjo Elf ni Dakishimeraretemasu</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/tensei-shitara-slime-datta-ken-f2785.jpg">
+        				<h3>Tensei Shitara Slime Datta Ken</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/default.jpg">
+        				<h3>Slime no Kawa o Kabutta Dragon~ Saijaku no Furishite Shizuka ni Ikitai</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/Mushoku-Tensei-P-300x450.jpg">
+        				<h3>Mushoku Tensei - Isekai Ittara Honki Dasu</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/series_348.jpg">
+        				<h3>Isekai to watashi, docchi ga suki nano ?</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/Boku-nno-pico.jpg">
+        				<h3>Boku No Pico</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/superhero-in-fantasy-world.jpg">
+        				<h3>Superhero in Fantasy World</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/strongest-brave.jpg">
+        				<h3>The Strongest Brave Who Craves For Revenge, Extinguish With The Power of Darkness</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/hataraku-maou-sama.jpg">
+        				<h3>Hataraku Maou-sama</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/arifureta-shokugyou-de-sekai-saikyou-kyo-art.jpg">
+        				<h3>Arifureta Shokugyou de Sekai Saikyou</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/death-match- kara.jpg">
+        				<h3>Death March kara Hajimaru Isekai Kyusoukyoku</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/maou-gakuin.jpg">
+        				<h3>Maou Gakuin no Futekigousha ~Shijou Saikyou no Maou no Shiso, Tensei shite Shison tachi no Gakkou e Kayou~</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/My-Plainlooking-Fiance-is-Secretly-Sweet-with-Me.jpg">
+        				<h3>My Plain-looking Fiancee is Secretly Sweet with me</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/Tensei_Oujo_to_Tensai_Reijou_no_Mahou_Kakumei.jpg">
+        				<h3>Tensei Oujo To Tensai Reijou No Mahou Kakumei</h3></a>
+        		</li>
+        	</ul>
+        	<ul id="conti">
+        		<a href="Tsuki LightNovel List.html">Xem Thêm</a>
+        	</ul>
+        </div>
+        </div>
+	</section>
+	<section class="main-content">
+		<div class="container">
+		<div>
+			<div id="anh">
+				<a href=""><span class="images"></span>Top Yêu Thích</a>
+			</div>
+			<ul class="LightNovel">
+        		<li class="star2">
+        			<a href="Tsuki-LightNovel Slime-300.html">
+        				<img src="Image/slime-taoshite-300-nen-shiranai-uchi-ni.jpg">
+        				<h3>Slime Taoshite 300 Nen, Shiranai Uchi ni Level MAX ni Nattemashita</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/Keiken Zumi na.jpg">
+        				<h3>Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi.</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/arifureta-shokugyou-de-sekai-saikyou-kyo-art.jpg">
+        				<h3>Arifureta Shokugyou de Sekai Saikyou</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/series_348.jpg">
+        				<h3>Isekai to watashi, docchi ga suki nano ?</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/Gimai Seikatsu.jpg">
+        				<h3>Gimai Seikatsu</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/death-match- kara.jpg">
+        				<h3>Death March kara Hajimaru Isekai Kyusoukyoku</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/a-breakthrough-came-out-by-forbidden-mas.jpg">
+        				<h3>Breakthrough with the Forbidden Master</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/tong-man-cung-mieu-nuong-khong-don-gian-thuong-ngay.jpg">
+        				<h3>Tổng Mạn: Cùng Miêu Nương Không Đơn Giản Thường Ngày</h3></a>
+        		</li>
+        		<li class="star2">
+        			<a href="">
+        				<img src="Image/thien-tai-trieu-hoi-su.jpg">
+        				<h3>Thiên Tài Triệu Hồi Sư</h3></a>
+        		</li>
+        	</ul>
+		</div>
+		</div>
+	</section>
+	<footer>
+		<div>
+			<a href="">
+				<li>Light Novel</li>
+			</a>
+			<a href="">
+				<li>Light Novel Online</li>
+			</a>
+			<a href="">
+				<li>Doc Light Novel</li>
+			</a>
+			<a href="">
+				<li>Doc Light Novel Online</li>
+			</a>
+			<a href="">
+				<li>Tieu Thuyet Hoat Hinh Nhat Ban</li>
+			</a>
+		<div id="foot">
+			<ul class="foot2">
+				<div>
+					<img src="Image/logo in.jpeg">
+				</div>
+				<span>©2020 - 2021 Cổng Light Novel<psan>
+			</ul>
+		</div>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
